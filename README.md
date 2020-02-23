@@ -22,7 +22,7 @@ The default directory in which the script runs is `$HOME/Desktop`, since that is
 |---|---|---|
 | -d  | Defined at the top of the script with $dir | The directory in which the script should be executed. |
 | -n  | The last modified file in the directory | The name of the file that should be converted to a GIF. |
-| -f  | 15  | The desired FPS frequency. |
-| -w  |  same as input | The desired width fo the resulting GIF. The height is adjusted automatically. |
-| -o  |  same as input | name of the output file. |
-| -h  |  n/a | Displays the help message. |
+| -f  | 15 | The desired FPS frequency. |
+| -w  | Same as input | The desired width fo the resulting GIF. The height is adjusted automatically. |
+| -o  | Same as input | Name of the output file. |
+| -h  | n/a | Displays the help message. |
