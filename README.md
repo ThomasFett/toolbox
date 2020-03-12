@@ -10,7 +10,7 @@ The computer needs to have the `ffmpeg` command available. You can use Homebrew 
 After cloning this toolbox repository, you can add an alias to your `$HOME/.bash_profile` to easily call the GIF creator:
 
 ```
-alias gif="sh $HOME/Documents/projects/toolbox/gif.sh"
+alias gif="sh $HOME/repositories/toolbox/gif.sh"
 ```
 
 Then you can call the GIF creator anywhere by simply running `gif` in your terminal.
@@ -26,3 +26,30 @@ The default directory in which the script runs is `$HOME/Desktop`, since that is
 | -w  | Same as input | The desired width fo the resulting GIF. The height is adjusted automatically. |
 | -o  | Same as input | Name of the output file. |
 | -h  | n/a | Displays the help message. |
+
+## Port Killer
+
+### Setup
+
+After cloning this toolbox repository, you can add an alias to your $HOME/.bash_profile to easily call the port killer:
+
+```
+alias killport="sh $HOME/repositories/toolbox/killport.sh"
+```
+
+Then you can call the port killer anywhere by simply running `killport` with the desired arguments in your terminal.
+
+If you want to use `sudo`, please be aware that you can't simply run `sudo` with an alias.
+One simple solution to this can be to add a second alias that runs the `killport` command directly with sudo:
+
+```
+alias sudokillport="sudo sh $HOME/repositories/toolbox/killport.sh"
+```
+
+### Options
+| param  |  description  |
+|---|---|
+| -p  | Defines for which ports you want to kill the processes.<br>You can provide a single port: "-p 8080"<br>You can provide multiple ports, separated by commas: "-p 8080,8090"<br> You can provide a range of ports, separating the first and last port with a colon: "-p 8080:8090" <br> You can also use a mix of the above.|
+| -s  | Kills the processes with SIGKILL (-9) instead of the default. |
+| -l  | Shows a list of processes that have listening ports open (uses the `lsof` command). |
+| -h  | Displays the help message. |
