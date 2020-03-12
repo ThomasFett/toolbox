@@ -1,8 +1,8 @@
-#Default configuration
+# Default configuration
 dir="$HOME/Desktop/"
 fps=15
 
-#Help function
+# Help function
 Help() {
     echo "This tool uses ffmpeg to convert an input file into a GIF."\\n
 
